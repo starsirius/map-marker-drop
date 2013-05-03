@@ -1,0 +1,97 @@
+/**
+ * Custom style sheet
+ */
+
+body, html {
+    height: 100%;
+}
+body {
+    background: #525263;
+}
+.success {
+    padding:30px 0px;
+}
+.backgroundnone {
+    background:none;
+    border:none;
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+.form-text span {
+    font-size:18px;
+    color:#cbcbd1;
+    display:block;
+    margin:0 0 10px;
+    font-family: 'Gotham-Book', Arial;
+}
+.submit-form {
+    margin:20px 0 0 ;
+}
+.textfiled {
+    height:48px;
+    border-radius: 4px;
+}
+.submit-form label {
+    font-size:13px;
+    font-weight:bold;
+}
+.submit-form p {
+    height:60px;
+    margin:0px 0px 10px;
+}
+.form-text h2 {
+    color:#fdfdfd;
+    margin:2px 0 12px;
+}
+.form-text b {
+    color:#51c3b7;
+    font-size:16px;
+    font-weight:bold;
+}
+.btn {
+    background:#e95b41;
+    border-radius:5px;
+    padding:10px 30px;
+    border:none;
+    color:#ffffff;
+    font-weight:bold;
+    width:40%;
+    margin-top:10px;
+}
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+
+#map {
+    position: relative; 
+    width: 450px; 
+    height: 450px; 
+}
+.map-container {
+    margin-top: 3em;
+}
+.map-border {
+    width: 470px;
+    height: 470px;
+    border-radius: 470px;
+    border: 10px solid white;
+    margin: 0 auto;
+}
+.map-content {
+    width: 450px;
+    height: 450px;
+    border-radius: 500px;
+    overflow: hidden;
+    /**
+     * Known webkit bug when using overflow-hidden + position relative and border radius.
+     * An easy fix is to add an svg webkit mask to the same element. See: 
+     * http://stackoverflow.com/questions/14470796/webkit-border-radius-combined-with-css3-translate3d-bleeding
+     * http://stackoverflow.com/questions/13476942/flexslider-border-radius-does-not-wrap-image-in-chrome-safari-but-will-in-fire
+     * http://jsfiddle.net/CPpX2/2/
+     */
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
